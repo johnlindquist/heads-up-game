@@ -1,0 +1,63 @@
+{
+    "animals": {
+        "name": "Animals",
+        "words": [
+            "Dog",
+            "Lion",
+            "Elephant",
+            "Giraffe",
+            "Penguin",
+            "Dolphin",
+            "Tiger",
+            "Kangaroo",
+            "Koala",
+            "Zebra",
+            "Cheetah"
+        ]
+    },
+    "movies": {
+        "name": "Movies",
+        "words": [
+            "Titanic",
+            "Avatar",
+            "Star Wars",
+            "Inception",
+            "Frozen",
+            "Jurassic Park",
+            "The Matrix",
+            "Gladiator",
+            "Interstellar",
+            "Parasite"
+        ]
+    },
+    "celebrities": {
+        "name": "Celebrities",
+        "words": [
+            "Brad Pitt",
+            "Beyoncé",
+            "Leonardo DiCaprio",
+            "Meryl Streep",
+            "Tom Hanks",
+            "Jennifer Lawrence",
+            "Robert Downey Jr.",
+            "Scarlett Johansson",
+            "Will Smith",
+            "Emma Watson"
+        ]
+    },
+    "sports": {
+        "name": "Sports",
+        "words": [
+            "Basketball",
+            "Football",
+            "Tennis",
+            "Soccer",
+            "Swimming",
+            "Baseball",
+            "Golf",
+            "Cricket",
+            "Hockey",
+            "Volleyball"
+        ]
+    }
+}

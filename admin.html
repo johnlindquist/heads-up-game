@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heads Up Game Admin Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        pre {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .note {
+            background: #fff3cd;
+            border: 1px solid #ffeeba;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heads Up Game Admin Guide</h1>
+    
+    <div class="note">
+        <strong>Security Note:</strong> This version uses a public Gist to store categories, 
+        which is more secure as it doesn't require storing any credentials.
+    </div>
+
+    <h2>How to Manage Categories</h2>
+    
+    <h3>Initial Setup</h3>
+    <ol>
+        <li>Go to <a href="https://gist.github.com/" target="_blank">GitHub Gist</a></li>
+        <li>Create a new file called <code>categories.json</code></li>
+        <li>Copy this template and modify it with your categories:
+            <pre>{
+    "animals": {
+        "name": "Animals",
+        "words": ["Lion", "Elephant", "Giraffe"]
+    },
+    "movies": {
+        "name": "Movies",
+        "words": ["Avatar", "Star Wars", "Matrix"]
+    }
+}</pre>
+        </li>
+        <li>Click "Create public gist"</li>
+        <li>Copy the Gist ID from the URL (the long string after your username)</li>
+        <li>Update the <code>GIST_ID</code> in <code>script.js</code> with your Gist ID</li>
+    </ol>
+
+    <h3>Updating Categories</h3>
+    <ol>
+        <li>Go to your Gist on GitHub</li>
+        <li>Click the "Edit" button</li>
+        <li>Modify the categories and words as needed</li>
+        <li>Click "Update public gist"</li>
+        <li>The game will automatically load the new categories when players refresh</li>
+    </ol>
+
+    <h3>Category Format</h3>
+    <p>Each category in the JSON file should follow this format:</p>
+    <pre>{
+    "category-id": {
+        "name": "Display Name",
+        "words": ["Word 1", "Word 2", "Word 3"]
+    }
+}</pre>
+
+    <h3>Tips</h3>
+    <ul>
+        <li>Keep category IDs lowercase and simple (e.g., "movies", "animals")</li>
+        <li>Display names can be more user-friendly (e.g., "Popular Movies", "Wild Animals")</li>
+        <li>Make sure your JSON is valid - you can use a JSON validator if needed</li>
+        <li>The game will fall back to the local categories.json if the Gist fails to load</li>
+    </ul>
+</body>
+</html>
